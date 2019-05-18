@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contacteaza-ne</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Cetatea_R%C3%A2%C8%99nov%2C_v%C4%83zut%C4%83_din_%C8%99oseaua_Cristian-R%C3%A2%C8%99nov..jpg/1200px-Cetatea_R%C3%A2%C8%99nov%2C_v%C4%83zut%C4%83_din_%C8%99oseaua_Cristian-R%C3%A2%C8%99nov..jpg"style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Prenume</label>
+        <input type="text" id="fname" name="firstname" placeholder="Prenumele tau">
+        <label for="lname">Nume</label>
+        <input type="text" id="lname" name="lastname" placeholder="Numele tau">
+        <label for="country">Tara</label>
+        <select id="country" name="tara">
+          <option value="romania">Romania</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="germania">Germania</option>
+          <option value="franta">Franta</option>
+          <option value="bulgaria">Bulgaria</option>
+          <option value="india">India</option>
+          <option value="zambia">Zambia</option>
+          <option value="zimbabwe">Zimbabwe</option>
+          <option value="mozambic">Mozambic</option>
+          <option value="ungaria">Ungaria</option>
+          <option value="rusia">Rusia</option>
+
+        </select>
+        <label for="subject">Subiect</label>
+        <textarea id="subject" name="subject" placeholder="Scrie un comentariu" style="height:170px"></textarea>
+        <input type="submit" value="Trimite">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
