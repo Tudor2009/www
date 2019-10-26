@@ -16,20 +16,7 @@
 	<!-- Here we add libs for jQuery, Ajax... -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	
-	<script type="text/javascript">
-		if(screen.width > 800) { // Animate navigation
-			$(document).ready(function() {
-			// функцию скролла привязать к окну браузера
-				$(window).scroll(function(){
-					var distanceTop = $('#slideMenu').offset().top;
-					if ($(window).scrollTop() >= distanceTop)
-						$ ('nav').attr ("id", "fixed");
-					else //if ($(window).scrollTop() < distanceTop)
-						$ ('nav').attr ("id", "nav");
-				});
-			});
-		}
-	</script>
+	
 </head>
 <body>
 	<header>
