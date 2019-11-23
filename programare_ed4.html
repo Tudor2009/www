@@ -28,6 +28,23 @@ li a {
 li a:hover {
   background-color: #111;
 }
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+.halloween {
+    height: 64px;
+    width: 64px;
+    margin: 29px;
+    border: 2px solid orange;
+    background: url(./images/1.png);
+}
+
+.halloween-active {
+    background: url(./images/0.png);
+}
 </style>
 </head>
 <body>
@@ -44,7 +61,13 @@ li a:hover {
 		
 		<center><h1>Despre informatica</h1></center>
 		<center>
-
+ <div class="container">
+        <audio id="myAudio">
+            <source src="https://youtu.be/Qzxo6AnNQ-o" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="halloween"></div>
+    </div>
 <img src="http://portal.lbi.ro/wp-content/uploads/2018/03/799_15_years_of_-1_1-620x349.jpg"style="width:350px;height:350px">
 <img src="http://technoreport.ro/wp-content/uploads/2016/12/internet_imagine.png">
 <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"style="width:350px;height:350px">
@@ -67,11 +90,15 @@ Istoric, informatica s-a dezvoltat ca stiinta din matematica, in timp ce dezvolt
 <img src="https://i.cbc.ca/1.4833630.1537555507!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/global-internet-abstract.jpg"style="width:600px;height:338px">
 <img src="http://news.mit.edu/sites/mit.edu.newsoffice/files/images/2016/MIT-Phonon-Scattering_0.jpg"style="width:600px;height:338px">
 <iframe width="600" height="338" src="https://www.youtube.com/embed/2Vjx-kvmIsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="600" height="338" src="https://www.youtube.com/embed/T7zTUdjbPK8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
-<hr/><br/>
+<iframe width="600" height="338" src="https://www.youtube.com/embed/T7zTUdjbPK8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
 
-<p style ="font-size:30px;">CREAT DE SIMON TUDOR </p>
+<script src="script.js"></script>
+
+<footer>
+<p style ="font-size:30px; background-color: #333; margin-top: 0px; margin-padding:0px;">CREAT DE SIMON TUDOR </p>
 </center>
-
+</footer>
+  
 	</body>
 	</html>
